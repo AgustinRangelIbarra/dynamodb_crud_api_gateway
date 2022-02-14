@@ -16,7 +16,7 @@ plugins:
 
 functions:
   getPost:
-    handler: api.getPost
+    handler: src/api.getPost
     name: get-post
     memorySize: 128 # mb
     timeout: 5 # seconds
@@ -31,7 +31,7 @@ functions:
         Resource: !GetAtt PostsTable.Arn
 
   createPost:
-    handler: api.createPost
+    handler: src/api.createPost
     name: create-post
     memorySize: 128 # mb
     timeout: 5 # seconds
@@ -46,7 +46,7 @@ functions:
         Resource: !GetAtt PostsTable.Arn
 
   updatePost:
-    handler: api.updatePost
+    handler: src/api.updatePost
     name: update-post
     memorySize: 128 # mb
     timeout: 5 # seconds
@@ -61,7 +61,7 @@ functions:
         Resource: !GetAtt PostsTable.Arn
 
   deletePost:
-    handler: api.deletePost
+    handler: src/api.deletePost
     name: delete-post
     memorySize: 128 # mb
     timeout: 5 # seconds
@@ -76,7 +76,7 @@ functions:
         Resource: !GetAtt PostsTable.Arn
 
   getAllPosts:
-    handler: api.getAllPosts
+    handler: src/api.getAllPosts
     name: get-all-posts
     memorySize: 128 # mb
     timeout: 5 # seconds
