@@ -6,7 +6,7 @@ provider:
   stage: dev
   region: us-west-2
   environment:
-    DYNAMODB_TABLE_NAME: ${self.:custom.postsTableName}
+    DYNAMODB_TABLE_NAME: ${self:custom.postsTableName}
 
 custom:
   postsTableName: posts-table-${self:provider.stage}
